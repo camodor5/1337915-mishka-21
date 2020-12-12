@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body class="page-body">
+  <header class="main-header">
+    <a class="main-header__logo" href="#">
+      <img src="img/mishka-logo-mobile.svg.svg" width="86" height="35" alt="Логотип Мишка">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Вязание под заказ</a>
+        </li>
+        <li class="main-nav__item main-nav__item--search">
+          <a class="main-nav__link" href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-nav__item main-nav__item--cart">
+          <a class="main-nav__link" href="#">Корзина:<span>пока пуста</span></a>
+        </li>
+        <li class="main-nav__item main-nav__item--add">
+          <a class="main-nav__link" href="#">Новые поступления</a>
+        </li>
+        <li class="main-nav__item main-nav__item--add">
+          <a class="main-nav__link" href="#">Распродажа</a>
+        </li>
+        <li class="main-nav__item">
+          <span>Бесплатная доставка</span>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="main-header__title">Вязание на заказ</h1>
+  </header>
+  <main class="page-main">
+    <section class="order">
+      <h2 class="visually-hidden">Форма заказа</h2>
+      <p class="order__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset class="form__type">
+          <legend class="form__heading">
+            тип
+          </legend>
+          <label class="form__radio" for="accessories">
+            <input type="radio" name="type" id="accessories" checked>
+            Аксессуар для интерьера
+          </label>
+          <label class="form__radio" for="toys">
+            <input type="radio" name="type" id="toys">
+            Детская игрушка
+          </label>
+        </fieldset>
+
+        <fieldset class="form__color">
+          <legend class="form__heading">
+            цвет
+          </legend>
+          <label class="form__checkbox" for="white">
+            <input type="checkbox" name="white" id="white" checked>
+            Белый
+          </label>
+          <label class="form__checkbox" for="grey">
+            <input type="checkbox" name="grey" id="grey" checked>
+            Серый
+          </label>
+          <label class="form__сheckbox" for="tiffani">
+            <input type="checkbox" name="tiffani" id="tiffani">
+            «Тиффани»
+          </label>
+          <label class="form__checkbox" for="black">
+            <input type="checkbox" name="black" id="black">
+            Черный
+          </label>
+          <label class="form__checkbox" for="pink">
+            <input type="checkbox" name="pink" id="pink">
+            Розовый
+          </label>
+          <label class="form__checkbox" for="orange">
+            <input type="checkbox" name="orange" id="orange">
+            Оранжевый
+          </label>
+        </fieldset>
+
+        <fieldset class="registration">
+          <div class="registration__client">
+            <legend class="form__heading">
+              фио
+            </legend>
+            <label class="registration__heading" for="name">
+              Имя:
+              <input type="text" name="name" id="name" placeholder="Введите ваше имя*">
+            </label>
+            <label class="registration__heading" for="surname">
+              Фамилия:
+              <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
+            </label>
+            <label class="registration__heading" for="celebrated">
+              Отчество:
+              <input type="text" name="celebrated" id="celebrated" placeholder="Отчество, если желаете">
+            </label>
+          </div>
+          <div class="registration__adress">
+            <label class="form__heading" for="telephone">
+              тел
+              <input type="tel" name="telephone" id="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            </label>
+            <label class="form__heading" for="e-mail">
+              e-mail
+              <input type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
+            </label>
+          </div>
+          <div class="registration__wishes">
+            <label class="form__heading" for="description">
+              доп
+            </label>
+            <textarea class="registration__wishes--text" name="description" id="description" cols="30" rows="10">
+              Опишите все ваши пожелания к заказу
+            </textarea>
+            <small class="registration__wishes--note">*Поля обязательны для заполнения</small>
+            <button class="button form__button" type="submit">
+              отправить заказ
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__logo"></div>
+    <ul class="footer__social">
+      <li class="footer__social-item"></li>
+      <li class="footer__social-item"></li>
+      <li class="footer__social-item"></li>
+    </ul>
+    <div class="footer__copyright">
+      <span>Разработано</span>
+      <a href="#"></a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+.popup {
+  width: 100%;
+  height: 100%;
+  background-color: $white-toning;
+  position: absolute;
+  top: 0px;
+  z-index: 4;
+}
+
+.popup--close {
+  display: none;
+}
+
+.popup__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include popup-shadow;
+  background: $white;
+  @media (min-width: $tablet) {
+    width: 566px;
+  }
+}
+
+
+.popup__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  padding: 28.5px 75px 0px 74px;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 57px;
+    padding: 37.5px 92px 0px 93px;
+  }
+}
+
+.popup__intro {
+  display: block;
+  font-size: 15px;
+  line-height: 30px;
+  margin-top: 14px;
+  text-align: center;
+  @media (min-width: $tablet) {
+    font-size: 17px;
+    margin-top: 11px
+  }
+}
+
+.popup__form {
+  display: block;
+  margin-top: 21.5px;
+  @include mobile-padding;
+  @media (min-width: $tablet) {
+    margin-top: 19.5px;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+}
+
+.popup__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.popup__item {
+  box-sizing: border-box;
+  width: 82px;
+  height: 52px;
+  @media (min-width: $tablet) {
+    width: 112px;
+  }
+}
+
+.popup__label {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.popup__span {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $modal-border;
+  &:hover {
+    border-color: $modal-border-hover;
+  }
+}
+
+.popup__input:checked + .popup__span,
+.popup__input:focus + .popup__span {
+  border: 2px solid $cyan1;
+}
+
+.popup__button {
+  display: block;
+  width: 260px;
+  margin-top: 31px;
+  margin: 31px auto 46px;
+  background-color: $cyan2;
+  border: none;
+  color: $white;
+  font-size: 17px;
+  line-height: 16px;
+  &:hover {
+    background-color: $cyan4;
+  }
+  @media (min-width: $tablet) {
+    width: 360px;
+  }
+}
+
+.popup__br {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

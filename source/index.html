@@ -9,7 +9,7 @@
 <body class="page-body">
   <svg style="display: none">
     <symbol viewBox="0 0 18 18" id="icon-search">
-      <path opacity="0.2" d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z" fill="black"/>
+      <path d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z"/>
     </symbol>
   </svg>
     <header class="main-header">
@@ -33,7 +33,7 @@
             <a class="main-nav__link" href="#">
               <span>Поиск по сайту</span>
               <svg class="main-nav__svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.2" d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z" fill="black"/>
+                <use xlink:href="#icon-search"></use>
               </svg>
             </a>
           </li>
@@ -52,7 +52,7 @@
             <a class="main-nav__link" href="#">Распродажа</a>
           </li>
           <li class="main-nav__item main-nav__item--delivery">
-            <a class="main-nav__link"><span>Бесплатная доставка по России</span></a>
+            <span class="main-nav__link">Бесплатная доставка по России</span>
           </li>
         </ul>
       </nav>
@@ -168,7 +168,7 @@
         <h3 class="contacts__title">Контакты</h3>
         <div class="contacts__email">
           <span class="contacts__type">e-mail:</span>
-          <a href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          <a class="contacts__email-link" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
         </div>
         <div class="contacts__adress">
           <span class="contacts__type">адрес:</span>
@@ -227,6 +227,35 @@
       </div>
     </div>
   </footer>
+  <section class="popup popup--close">
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Добавить<br class="popup__br"> в корзину</h2>
+      <span class="popup__intro">Выберите размер:</span>
+      <form action="https://echo.htmlacademy.ru" class="popup__form">
+        <ul class="popup__list">
+          <li class="popup__item">
+            <label class="popup__label">
+              <input class="popup__input visually-hidden" type="radio" name="popup__input" id="" checked>
+              <span class="popup__span">S</span>
+            </label>
+          </li>
+          <li class="popup__item">
+            <label class="popup__label">
+              <input class="popup__input visually-hidden" type="radio" name="popup__input" id="">
+              <span class="popup__span">M</span>
+            </label>
+          </li>
+          <li class="popup__item">
+            <label class="popup__label">
+              <input class="popup__input visually-hidden" type="radio" name="popup__input" id="">
+              <span class="popup__span">L</span>
+            </label>
+          </li>
+        </ul>
+        <button class="popup__button button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </section>
   <script src="js/main.js"></script>
 </body>
 </html>

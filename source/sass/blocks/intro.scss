@@ -77,10 +77,18 @@
   background-color: $dark-green;
   padding: 0;
   position: relative;
+  &:hover {
+    padding-bottom: 5px;
+    margin-top: -5px;
+    background-color: $cyan4;
+  }
 }
 
 .intro__item:first-of-type {
   background-color: $green;
+  &:hover {
+    background-color: $cyan3;
+  }
 }
 
 .intro__item:first-of-type:before {

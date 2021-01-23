@@ -11,6 +11,10 @@
   @media (min-width: $tablet) {
       width: 768px;
       padding: 0 50px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 51px;
+      padding-bottom: 58px;
     }
 
   @media (min-width: $desktop) {
@@ -20,6 +24,15 @@
 
 .footer__logo {
   display: none;
+  @media (min-width: $tablet) {
+    display: block;
+    &:hover {
+      color: $cyan4;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .footer__social {
@@ -28,6 +41,13 @@
   margin-top: 0;
 
   border-bottom: 1px solid $light-grey3;
+  @media (min-width: $tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    margin-top: -11px;
+    border: none;
+  }
 }
 
 .footer__copyright {
@@ -35,7 +55,6 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 19px;
-
   font-size: 19px;
   line-height: 19px;
   font-weight: 700;
@@ -45,39 +64,19 @@
   margin-top: 1px;
   margin-bottom: 4px;
   margin-right: 27px;
-}
-
-@media (min-width: $tablet) {
-  .footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 51px;
-    padding-bottom: 58px;
-  }
-
-  .footer__logo {
-    display: block;
-
-    img {
-      display: block;
-    }
-  }
-
-  .footer__social {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin: 0;
-    margin-top: -11px;
-    border: none;
-  }
-
-  .footer__copyright {
-    margin: 0;
-  }
-}
-
-@media (min-width: $desktop) {
-  .footer__copyright-text {
+  @media(min-width: $desktop) {
     margin-right: 29px;
+  }
+}
+.footer__copyright-link {
+  color: $cyan1;
+  @media (min-width: $tablet) {
+    margin: 0;
+    &:hover {
+      color: $cyan4;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

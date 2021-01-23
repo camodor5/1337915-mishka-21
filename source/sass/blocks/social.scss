@@ -10,6 +10,12 @@
 }
 
 .social__link {
+  &:hover {
+    color: $cyan4;
+  }
+  &:active {
+    opacity: 0.3;
+  }
   &--instagram {
     width: 22px;
     height: 21px;

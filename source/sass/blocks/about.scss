@@ -1,0 +1,191 @@
+.about__wrapper {
+  @media(min-width: $desktop) {
+    margin: 0 auto;
+    width: 1050px;
+  }
+}
+
+.about {
+  min-width: 320px;
+  box-sizing: border-box;
+  @include mobile-padding;
+  padding-top: 37px;
+  position: relative;
+  @media (min-width:$tablet) {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 72.5px;
+  }
+  @media(min-width:$desktop) {
+    padding-left: 175px;
+    padding-top: 91px;
+  }
+  &::before {
+    content: "";
+    display: block;
+    min-width: 320px;
+    width: 100%;
+    height: 6px;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background:url('../../img/zigzag-line-desktop.svg');
+    background-size: contain;
+
+    @media (min-width: $tablet) {
+      height: 17px;
+    }
+    @media (min-width: $desktop) {
+      height: 23px;
+    }
+  }
+}
+
+.about__title {
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: -1px;
+  @media (min-width: $tablet) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media (min-width: $desktop) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.about__list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.about__item {
+  margin-top: 83px;
+  font-weight: 700;
+  line-height: 20px;
+  width: 260px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 334px;
+
+    &--eco {
+      order: 1;
+    }
+
+    &--style {
+      order: 3;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--handmade {
+      order: 2;
+    }
+
+    &--support {
+      order: 4;
+    }
+
+    &--pack {
+      order: 6;
+    }
+
+  }
+
+
+
+  &--eco:before {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 38px;
+    background-image: url(../../img/icon-flower.svg);
+    position: absolute;
+    top: -54px;
+    left: 8px;
+  }
+  &--style:before {
+    content: '';
+    display: block;
+    width: 47px;
+    height: 27px;
+    background-image: url(../../img/icon-cash.svg);
+    position: absolute;
+    top: -53px;
+    left: 0px;
+  }
+  &--likes:before {
+    content: '';
+    display: block;
+    width: 34px;
+    height: 27px;
+    background-image: url(../../img/icon-heart.svg);
+    position: absolute;
+    top: -48px;
+    left: 7px;
+  }
+  &--handmade:before {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 34px;
+    background-image: url(../../img/icon-wool.svg);
+    position: absolute;
+    top: -52px;
+    left: 3px;
+  }
+
+
+  &--support:before {
+    content: '';
+    display: block;
+    width: 55px;
+    height: 23px;
+    background-image: url(../../img/icon-rocket.svg);
+    position: absolute;
+    top: -49px;
+    left: -6px;
+  }
+
+
+  &--pack:before {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 32px;
+    background-image: url(../../img/icon-gift.svg);
+    position: absolute;
+    top: -52px;
+    left: 3px;
+  }
+
+  @media (max-width: $mobile-only) {
+    &--pack {
+      margin-top: 84px;
+    }
+    &--support {
+      margin-top: 82px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: 111px;
+    width: 350px;
+    &--eco,
+    &--handmade {
+      margin-top: 99px;
+    }
+  }
+}

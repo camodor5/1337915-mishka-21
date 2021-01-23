@@ -1,0 +1,27 @@
+.properties-list {
+  color: $black;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.properties-list__container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $light-grey1;
+}
+
+.properties-list__term {
+  width: 97px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.properties-list__definition {
+  margin: 0;
+  width: 163px;
+  display: block;
+  box-sizing: border-box;
+}

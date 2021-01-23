@@ -1,0 +1,159 @@
+.product-card {
+  border: 1px solid $light-grey1;
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.product-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 28px 26px 28px;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (min-width: $tablet) {
+    width: 50%;
+    padding-top: 27px;
+    padding-left: 33px;
+  }
+
+  @media (min-width: $desktop) {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding-left: 27px;
+    padding-bottom: 23px;
+  }
+}
+
+.product-card__title {
+  @include list-reset;
+  font-weight: bold;
+  font-size: 17px;
+  color: $black;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.product-card__title-link {
+  margin-bottom: 5px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 4px;
+  }
+}
+
+.product-card__description {
+  @include list-reset;
+  margin-bottom: 17px;
+  font-size: 13px;
+  line-height: 30px;
+  color: $grey;
+
+  @media (min-width: $tablet) {
+    margin-bottom: auto;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    flex-grow: 1;
+  }
+}
+
+.product-card__image {
+  @media (min-width: $tablet) {
+    width: 50%;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    height: 462px;
+  }
+}
+
+.production-card__image-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-card__price {
+  @include list-reset;
+  font-size: 15px;
+  font-weight: bold;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+
+.product-card__buy {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 23px;
+  border-top: 1px solid $light-grey1;
+}
+
+.product-card__to-basket {
+  @media (min-width: $tablet) {
+    margin-right: 5px;
+  }
+
+  &:focus {
+    svg {
+      color: $cyan1;
+      opacity: 1;
+    }
+  }
+
+  svg {
+    color: $black;
+    opacity: 0.2;
+
+    &:hover {
+      color: $cyan1;
+      opacity: 1;
+    }
+
+    &:active {
+      color: $cyan1;
+      opacity: 0.2;
+    }
+  }
+}

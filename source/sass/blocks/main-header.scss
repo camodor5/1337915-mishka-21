@@ -1,0 +1,29 @@
+.main-header {
+  min-width: 320px;
+  background-color: $white;
+  position: relative;
+  z-index: 2;
+  @media (min-width: $tablet) {
+    background: none;
+  }
+  @media (max-width: $mobile-only) {
+    @include box-shadow;
+  }
+}
+
+.main-header:before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: $black;
+  opacity: 0.1;
+  width: 100%;
+  position: absolute;
+  top: 78px;
+  @media (min-width: $tablet) {
+    top: 88px;
+  }
+}
+
+
+

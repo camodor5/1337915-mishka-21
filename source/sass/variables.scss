@@ -9,7 +9,10 @@ $mobile-only: 767px;
 
 $white: #FFFFFF;
 $white-transparent: rgba(255, 255, 255, 0.3);
+$white-toning: rgba(255, 255, 255, 0.9);
 $black: #000000;
+$black-hover: rgba(0, 0, 0, 0.6);
+$black-active: rgba(0, 0, 0, 0.3);
 $grey: #444444;
 $dark-grey:#231f20;
 $light-grey1: #ECECEC;
@@ -22,5 +25,10 @@ $darkest-green: #149080;
 $green2: #6BC6B3;
 $cyan1: #63d1bb;
 $cyan2: #63d1ba;
+$cyan3: #59D5BC;
+$cyan4: #46C1AE;
+$cyan4-transparent: rgba(27, 76, 68, 0.1);
 
 $nav-border: rgba(0, 0, 0, 0.1);
+$modal-border: rgba(68, 68, 68, 0.1);
+$modal-border-hover: rgba(68, 68, 68, 0.3);

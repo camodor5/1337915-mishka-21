@@ -82,6 +82,18 @@
   }
 }
 
+.contacts__email-link {
+  border-bottom: 1px solid $cyan2;
+  height: min-content;
+  &:hover {
+    color: $cyan4;
+    border-color: $cyan4;
+  }
+  &:active {
+    border-color: $cyan4-transparent;
+  }
+}
+
 .contacts__adress {
   @include mobile-padding;
   display: flex;

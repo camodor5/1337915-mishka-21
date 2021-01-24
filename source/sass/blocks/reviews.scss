@@ -149,8 +149,11 @@
     padding: 0;
     border: none;
   }
-  @media (min-width: $desktop) {
-
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
   }
 }
 

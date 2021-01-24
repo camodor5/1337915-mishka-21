@@ -4,69 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Интернет-магазин «Мишка»</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/styles.min.css">
 </head>
 <body class="page-body">
   <svg style="display: none">
     <symbol viewBox="0 0 18 18" id="icon-search">
       <path d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z"/>
     </symbol>
+    <symbol viewBox="0 0 21 18" id="icon-cart">
+      <path d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"/>
+    </symbol>
   </svg>
-    <header class="main-header">
-      <nav class="main-nav">
-        <a class="main-nav__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
-            <img class="main-nav__logo-svg" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
-          </picture>
-        </a>
-        <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list display-none">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html"><span>Каталог товаров</span></a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html"><span>Вязание на заказ</span></a>
-          </li>
-          <li class="main-nav__item main-nav__item--search">
-            <a class="main-nav__link" href="#">
-              <span>Поиск по сайту</span>
-              <svg class="main-nav__svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#icon-search"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="main-nav__item main-nav__item--cart">
-            <a class="main-nav__link" href="#">
-              <svg class="main-nav__svg" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
-              </svg>
-              <span>Корзина: <span> пока пуста</span></span>
-            </a>
-          </li>
-          <li class="main-nav__item main-nav__item--add">
-            <a class="main-nav__link" href="#">Новые поступления</a>
-          </li>
-          <li class="main-nav__item main-nav__item--add">
-            <a class="main-nav__link" href="#">Распродажа</a>
-          </li>
-          <li class="main-nav__item main-nav__item--delivery">
-            <span class="main-nav__link">Бесплатная доставка по России</span>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <header class="main-header">
+    <nav class="main-nav">
+      <a class="main-nav__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/icons/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/icons/mishka-logo-tablet.svg">
+          <img class="main-nav__logo-svg" src="img/icons/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
+        </picture>
+      </a>
+      <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list display-none">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html"><span>Каталог товаров</span></a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html"><span>Вязание на заказ</span></a>
+        </li>
+        <li class="main-nav__item main-nav__item--search">
+          <a class="main-nav__link" href="#">
+            <span>Поиск по сайту</span>
+            <svg class="main-nav__svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--cart">
+          <a class="main-nav__link" href="#">
+            <svg class="main-nav__svg" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#icon-cart"></use>
+            </svg>
+            <span>Корзина: <span> пока пуста</span></span>
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--add">
+          <a class="main-nav__link" href="#">Новые поступления</a>
+        </li>
+        <li class="main-nav__item main-nav__item--add">
+          <a class="main-nav__link" href="#">Распродажа</a>
+        </li>
+        <li class="main-nav__item main-nav__item--delivery">
+          <span class="main-nav__link">Бесплатная доставка по России</span>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
   <main class="page-main">
     <section class="intro">
       <h1 class="intro__title">Милые штуки ручной <br>работы для дома</h1>
       <ul class="intro__list">
         <li class="intro__item">
-          <a class="intro__link" href="#">Предметы<br> интерьера</a>
+          <a class="intro__link" href="#">
+            Предметы<br> интерьера
+            <svg class="intro__svg intro__svg--interior" width="41" height="62" viewBox="0 0 41 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g>
+              <path d="M15.5025 37.6564C15.1965 38.65 15.2985 39.8423 15.5025 41.2333C16.0124 43.8167 17.2363 47.1949 17.9502 50.8712H23.1517C23.8657 47.2942 25.0896 43.916 25.7015 41.2333C26.0075 39.8423 26.0075 38.5506 25.7015 37.6564C25.3955 36.7622 24.7836 36.0667 23.6617 35.3712H17.5423C16.3184 36.0667 15.7065 36.7622 15.5025 37.6564Z"/>
+              <path d="M27.5373 57.5282H13.4627C12.1368 57.5282 11.1169 58.5218 11.1169 59.7141V61.9H13.4627H27.5373H29.883V59.7141C29.883 58.5218 28.8632 57.5282 27.5373 57.5282Z"/>
+              <path d="M34.7786 2.1859H22.8458C22.8458 0.99359 21.8259 0 20.5 0C19.1741 0 18.1542 0.99359 18.1542 2.1859H6.22138L0 27.5224C0.81592 27.0256 1.63185 26.5288 2.65175 26.5288C4.07961 26.5288 4.89552 27.3237 5.60945 27.9199C6.32338 28.516 6.83333 28.7147 7.03731 28.7147C7.34328 28.7147 7.85323 28.4167 8.56716 27.9199C9.28109 27.4231 10.199 26.5288 11.5249 26.5288C12.8507 26.5288 13.7687 27.3237 14.4826 27.9199C15.1965 28.4167 15.7065 28.7147 16.0124 28.7147C16.1144 28.7147 16.3184 28.6154 16.6244 28.516C16.8283 28.4167 17.1343 28.1186 17.5423 27.9199C18.0522 27.5224 18.6642 26.9263 19.5821 26.7276C19.8881 26.6282 20.194 26.6282 20.5 26.6282C21.8259 26.6282 22.7438 27.4231 23.4577 28.0192C24.1716 28.516 24.6816 28.8141 24.9876 28.8141C25.2935 28.8141 25.8035 28.516 26.4154 28.0192C27.1293 27.4231 28.0472 26.6282 29.3731 26.6282C30.801 26.6282 31.6169 27.4231 32.3308 28.0192C32.6368 28.3173 32.9428 28.516 33.2487 28.6154C33.4527 28.7147 33.6567 28.8141 33.8607 28.8141C34.1667 28.8141 34.6766 28.516 35.2885 27.9199C36.0025 27.3237 36.9204 26.5288 38.2463 26.5288C39.2662 26.5288 40.0821 27.0256 40.898 27.5224L34.7786 2.1859Z"/>
+              <path d="M23.9677 53.0571H16.9304C16.2164 53.0571 15.8085 53.5539 15.8085 54.15C15.8085 54.7462 16.3184 55.243 16.9304 55.243H23.9677C24.6816 55.243 25.0896 54.7462 25.0896 54.15C25.1915 53.5539 24.6816 53.0571 23.9677 53.0571Z"/>
+              <path d="M20.5 28.7141C20.398 28.7141 20.194 28.8135 19.8881 28.9128C19.6841 29.0122 19.4801 29.2109 19.2761 29.3103V32.9865H21.6219V29.4096C21.1119 29.0122 20.704 28.7141 20.5 28.7141Z"/>
+              </g>
+            </svg>
+          </a>
         </li>
         <li class="intro__item">
-          <a class="intro__link" href="#">Детские<br> игрушки</a>
+          <a class="intro__link" href="#">
+            Детские<br> игрушки
+            <svg class="intro__svg intro__svg--toy" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 43.9933L27.4 60V36.5436L0 20.4362V43.9933ZM51.3 12.4832V15C51.3 16.8121 47.8 18.3221 43.6 18.3221C39.3 18.3221 35.9 16.8121 35.9 15V10.8725C36.2 12.5839 39.5 13.9933 43.6 13.9933C47.9 13.9933 51.3 12.4832 51.3 10.6711C51.3 8.85907 47.8 7.349 43.6 7.349C43.3 7.349 42.9 7.349 42.6 7.349L37.6 4.42954V7.55034C37.6 9.36242 34.1 10.8725 29.9 10.8725C27.2 10.8725 24.9 10.2685 23.5 9.36242C23.3 9.16108 23.1 8.95973 22.8 8.75839C22.4 8.3557 22.2 7.95302 22.2 7.55034V4.5302L17.4 7.349C17.1 7.349 16.7 7.349 16.3 7.349C12 7.349 8.60001 8.85907 8.60001 10.6711C8.60001 12.4832 12.1 13.9933 16.3 13.9933C20.4 13.9933 23.7 12.5839 24 10.8725V15C24 16.8121 20.5 18.3221 16.3 18.3221C12 18.3221 8.60001 16.8121 8.60001 15V12.5839L2.60001 16.1074L30.1 32.2148L57.5 16.2081L51.3 12.4832ZM37.7 22.7517C37.7 24.5638 34.2 26.0738 30 26.0738C25.7 26.0738 22.3 24.5638 22.3 22.7517V18.6242C22.6 20.3356 25.9 21.745 30 21.745C34.1 21.745 37.4 20.3356 37.7 18.6242V22.7517ZM32.6 36.745V60L60 43.9933V20.7383L32.6 36.745ZM29.9 6.6443C34.2 6.6443 37.6 5.13423 37.6 3.32215C37.6 1.51007 34.1 0 29.9 0C25.6 0 22.2 1.51007 22.2 3.32215C22.2 5.13423 25.6 6.6443 29.9 6.6443Z"/>
+            </svg>
+          </a>
         </li>
       </ul>
     </section>

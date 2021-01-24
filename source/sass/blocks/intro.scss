@@ -106,6 +106,44 @@
   }
 }
 
+.intro__svg {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  fill: $darkest-green;
+  opacity: 0.5;
+  &--interior {
+    width: 40px;
+    height: 62px;
+    top: 23px;
+    right: 36px;
+    @media (min-width: $tablet) {
+      top:30px;
+      right: 36px;
+    }
+  }
+  &--toy {
+    width: 60px;
+    height: 60px;
+    right: 27px;
+    top: 21px;
+    @media (min-width: $tablet) {
+      top:31px;
+      right: 33px;
+    }
+  }
+}
+
+.intro__item:hover .intro__svg{
+  opacity: 0.7;
+}
+
+.intro__item:active .intro__svg{
+  opacity: 0.3;
+}
+
+
+
 .intro__item:nth-of-type(2):before {
   content: "";
   display: block;

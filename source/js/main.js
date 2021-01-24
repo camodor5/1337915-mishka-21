@@ -20,3 +20,23 @@ var mainNavTogglerHandler = function () {
 
 buttonToggle.addEventListener('click', mainNavTogglerHandler);
 
+// Всплывающее окно
+
+var orderButton = document.querySelector('.top-product__button');
+var popup = document.querySelector('.popup');
+
+orderButton.addEventListener('click', function(evt){
+  evt.preventDefault();
+  popup.classList.remove('popup--close');
+})
+
+window.addEventListener('keydown', function(evt) {
+  if (evt.keyCode === 27) {
+    if (popup.classList.contains('popup-close')) {
+      evt.preventDefault();
+    } else {
+      evt.preventDefault();
+      popup.classList.add('popup--close');
+    }
+  }
+});

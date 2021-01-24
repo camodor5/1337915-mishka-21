@@ -20,13 +20,13 @@
   @include mobile-padding;
   position: relative;
   @media (min-width: $tablet) {
-    background-image: url("../../img/review\ 2.jpg");
+    background-image: url("../../img/review1.png");
     background-position: top left;
     background-size: contain;
     background-repeat: no-repeat;
     padding: 82.5px 50px 47px;
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/review\ 2@2x.jpg");
+      background-image: url("../../img/review1@2x.png");
       background-repeat:no-repeat;
     }
   }
@@ -40,6 +40,7 @@
     padding-bottom: 96px;
     padding-top: 78px;
     padding-right: 0px;
+    background-image: url("../../img/review2.png");
 
   }
 
@@ -173,4 +174,3 @@
     right: 0;
   }
 }
-
